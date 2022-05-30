@@ -4,11 +4,6 @@ The following is a minimal example of dtmnPlayer:
 ```html
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            background: #1E1E1E;
-        }
-    </style>
     <body>
         <audio class="dtmnPlayer" title="Amiss" src="amiss.mp3" preload="none"></audio>
         <script src="dtmnPlayer.js"></script>
