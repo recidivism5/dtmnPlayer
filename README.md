@@ -20,3 +20,8 @@ thus, you must include dtmnPlayer.js below the audio elements you wish to conver
 Using `preload="none"` will prevent loading the audio file until the user presses play, which
 may be useful if you have a page with many dtmnPlayers on it. It should decrease webtraffic by
 only loading the audio files that the user chooses to play.
+
+dtmnPlayer.js does not use any browser-specific styles. That means no webkit malarkey.
+It should look the same on all modern browsers.
+
+dtmnPlayer.js has no dependencies.
