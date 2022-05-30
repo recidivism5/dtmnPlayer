@@ -89,7 +89,6 @@ function dtmnImplementation()
             border-color:#f6dab6;
             position: relative;
             cursor: pointer;
-            box-shadow: 0 2px 10px 0 #0008;
         }
         .dtmnTimeline {
             width:60%;
