@@ -1,1 +1,1 @@
-![Example image](https://github.com/recidivism5/dtmnPlayer/blob/master/example.png)
+![Example image](https://github.com/recidivism5/dtmnPlayer/blob/master/example.PNG)
