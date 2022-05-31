@@ -7,7 +7,7 @@ function dtmnImplementation()
             p.style.width = Math.min(100 * e.offsetX / this.clientWidth, 100) + "%";
             this.parentElement.querySelector(".dtmnAudio").volume = p.style.width.slice(0,-1) / 100;
         }
-    };
+    }
     let updaters = {};
     function play(){
         let a = this.parentElement.querySelector(".dtmnAudio");
@@ -31,7 +31,7 @@ function dtmnImplementation()
             pa.style.display = "none";
             clearInterval(updaters[a]);
         }
-    };
+    }
     function seek(e){
         let a = this.parentElement.querySelector(".dtmnAudio");
         if (a.readyState && (e.buttons === 1))
@@ -40,7 +40,7 @@ function dtmnImplementation()
             a.currentTime = a.duration * (e.offsetX / this.clientWidth);
             tp.style.width = (100 * a.currentTime / a.duration) + "%";
         }
-    };
+    }
     let styleStr = `
         .dtmnBase {
             background: #1E1E1E;
@@ -177,4 +177,4 @@ function dtmnImplementation()
         nodes[i].replaceWith(p);
     }
 }
-new dtmnImplementation();
+dtmnImplementation();
