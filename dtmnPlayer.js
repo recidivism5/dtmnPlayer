@@ -1,5 +1,6 @@
 function dtmnImplementation()
 {
+    let updaters = new Map();
     function change_volume(e){
         if (e.buttons === 1)
         {
@@ -8,7 +9,6 @@ function dtmnImplementation()
             this.parentElement.querySelector(".dtmnAudio").volume = p.style.width.slice(0,-1) / 100;
         }
     }
-    let updaters = {};
     function play(){
         let a = this.parentElement.querySelector(".dtmnAudio");
         a.volume = this.parentElement.querySelector(".dtmnVolume").querySelector(".dtmnProgress").style.width.slice(0,-1) / 100;
@@ -20,16 +20,17 @@ function dtmnImplementation()
             a.play();
             pl.style.display = "none";
             pa.style.display = "block";
-            updaters[a] = setInterval(function(){
+            updaters.set(a, setInterval(function(){
                 tp.style.width = (100 * a.currentTime / a.duration) + "%";
-            },200);
+            },200));
+            console.log(updaters);
         }
         else
         {
             a.pause();
             pl.style.display = "block";
             pa.style.display = "none";
-            clearInterval(updaters[a]);
+            clearInterval(updaters.get(a));
         }
     }
     function seek(e){
