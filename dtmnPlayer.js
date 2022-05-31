@@ -23,7 +23,6 @@ function dtmnImplementation()
             updaters.set(a, setInterval(function(){
                 tp.style.width = (100 * a.currentTime / a.duration) + "%";
             },200));
-            console.log(updaters);
         }
         else
         {
