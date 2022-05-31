@@ -129,8 +129,8 @@ function dtmnImplementation()
                 <div class="dtmnProgress"></div>
             </div>
             <svg class="dtmnIcon dtmnSpeaker" width="30" height="30">
-                <polygon points="0,10 0,20 10,20 20,30 20,0 10,10"/>
-                <path d="M25,30 Q30,15 25,0"/>
+                <polygon points="1,10 1,20 10,20 20,30 20,1 10,10"/>
+                <path d="M25,30 Q30,15 25,1"/>
             </svg>
             <div class="dtmnSlider dtmnVolume">
                 <div class="dtmnProgress"></div>
@@ -139,8 +139,8 @@ function dtmnImplementation()
                 <button class="dtmnButton dtmnDownload">
                     <svg class="dtmnIcon dtmnIcon-play" width="30" height="32">
                         <path d="M0,29 30,29"/>
-                        <path d="M15,0 15,24"/>
                         <path d="M4,18 15,24 26,18"/>
+                        <path d="M15,0 15,24"/>
                     </svg>
                 </button>
             </a>
